@@ -14,14 +14,7 @@ pipeline {
                 }
         }
         
-        stage('Test'){
-            steps {
-                sh  'echo  "TEST STAGE"' 
-                
-                
-                sh 'vendor/bin/codecept run'
-            }
-        }
+        
         stage('Deploy'){
             steps {
                 sh  'echo  "DEPLOY STAGE"' 
